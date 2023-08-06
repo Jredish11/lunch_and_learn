@@ -17,7 +17,7 @@ class RecipeService
       end
     end
     json = JSON.parse(response.body, symbolize_names: true)
-    
+
     json[:hits].map do |hit|
       hit[:recipe]
     end
