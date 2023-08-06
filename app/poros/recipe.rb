@@ -7,7 +7,7 @@ class Recipe
               :image
 
   def initialize(data)
-    @id = nil
+    @id = data[:id]
     @type = "recipe"
     @title = data[:label]
     @url = data[:uri]
