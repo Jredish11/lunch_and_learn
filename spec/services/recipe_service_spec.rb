@@ -3,7 +3,7 @@ require "rails_helper"
 describe RecipeService do
   describe "instance methods" do
     describe "#get_recipe(country)" do
-      it "get recipe by random country no input by user" do
+      it "get recipe by country" do
 
         country = "thailand"
 
