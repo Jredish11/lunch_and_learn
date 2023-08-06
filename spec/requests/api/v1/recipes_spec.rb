@@ -12,7 +12,7 @@ describe  do
         expect(response).to be_successful
         expect(response.status).to eq(200)
         recipes_data.each do |recipes|
-
+          
           expect(recipes).to be_a(Hash)
           expect(recipes).to have_key(:data)
           expect(recipes[:data]).to be_a(Hash)
