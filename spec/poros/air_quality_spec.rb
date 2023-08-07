@@ -13,7 +13,7 @@ RSpec.describe AirQuality do
       expect(aq.type).to eq("air_quality")
       expect(aq.aqi).to be_a(Integer)
       expect(aq.co_concentration).to be_a(Float)
-      expect(aq.country).to be_a(String)
+      expect(aq.city).to be_a(String)
       expect(aq.pm25_concentration).to be_a(Float) 
     end
   end

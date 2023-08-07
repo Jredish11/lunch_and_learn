@@ -1,5 +1,5 @@
 class AirQuality
-  attr_reader :country, 
+  attr_reader :city, 
               :aqi, 
               :pm25_concentration, 
               :co_concentration,
@@ -9,7 +9,7 @@ class AirQuality
   def initialize(data)
     @id = nil
     @type = "air_quality"
-    @country = data[:city]
+    @city = data[:city]
     @aqi = data[:overall_aqi]
     @pm25_concentration = data[:"PM2.5"]
     @co_concentration = data[:CO]

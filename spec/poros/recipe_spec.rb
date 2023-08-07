@@ -4,7 +4,7 @@ RSpec.describe Recipe do
   describe "existance" do
     it "exits and has attributes" do
      
-      country = "mexico"
+      country = "Cuba"
       recipe = RecipeFacade.new(country).recipes
 
       expect(recipe.first).to be_a(Recipe)
