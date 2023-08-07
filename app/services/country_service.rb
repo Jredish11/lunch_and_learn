@@ -6,9 +6,9 @@ class CountryService
 
   def self.get_country
     cache_key = "get_country_data"
-    response = Rails.cache.fetch(cache_key, expires_in: 1.day) do 
-      country_conn.get("all")
-    end
+    # response = Rails.cache.fetch(cache_key, expires_in: 1.day) do 
+      response = country_conn.get("all")
+    # end
     json = JSON.parse(response.body, symbolize_names: true)
   end
   

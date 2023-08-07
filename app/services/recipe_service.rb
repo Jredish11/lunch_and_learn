@@ -9,7 +9,7 @@ class RecipeService
   def self.get_recipe(country)
     cache_key = "get_recipe_data"
     response = Rails.cache.fetch(cache_key, expires_in: 1.day) do 
-     response = ede_conn.get("?") do |request|
+    response = ede_conn.get("?") do |request|
         request.params['type'] = "public"
         request.params['q'] = country
         request.params['app_id'] = ENV['ede_id']
