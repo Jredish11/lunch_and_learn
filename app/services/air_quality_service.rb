@@ -1,14 +1,14 @@
 class AirQualityService
 
-  def self.ninja_conn
-    Faraday.new("https://api.api-ninjas.com/v1/airquality?city=")
+  def ninja_conn
+    Faraday.new("https://api.api-ninjas.com/v1/airquality")
   end
 
-  def self.get_air_quality(country)
-    response = ninja_conn.get("#{country}") do |request|
+  def get_air_quality(country)
+    response = ninja_conn.get do |request|
       request.params['city'] = country
+      request.headers['X-Api-Key'] = ENV['ninja_key']
     end
     json = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'; binding.pry
   end
 end
