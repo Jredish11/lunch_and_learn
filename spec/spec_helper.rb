@@ -17,7 +17,7 @@
   require 'simplecov'
   require 'webmock/rspec'
   SimpleCov.start 'rails'
-  WebMock.disable_net_connect!
+  WebMock.allow_net_connect!
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
