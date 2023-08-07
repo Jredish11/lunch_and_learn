@@ -14,4 +14,5 @@ class AirQualityFacade
     }
     aq = AirQuality.new(aq_hash)
   end
+
 end
