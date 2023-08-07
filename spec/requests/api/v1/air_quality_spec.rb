@@ -8,6 +8,7 @@ RSpec.describe "Air Quality API", type: :request do
       get "/api/v1/air_quality", params: { country: country }
 
       aq_data = JSON.parse(response.body, symbolize_names: true)
+      require 'pry'; binding.pry
       expect(response).to be_successful
       expect(response.status).to eq(200)
 
