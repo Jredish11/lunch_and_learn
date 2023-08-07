@@ -8,7 +8,16 @@ describe AirQualityService do
 
         aq = AirQualityService.new.get_air_quality(country)
 
-        require 'pry'; binding.pry
+        expect(aq).to be_a(Hash)
+        expect(aq).to have_key(:CO)
+        expect(aq[:CO][:concentration]).to be_a(Float)
+        
+        
+        expect(aq).to have_key(:"PM2.5")
+        expect(aq[:"PM2.5"][:concentration]).to be_a(Float)
+        
+        expect(aq).to have_key(:overall_aqi)
+        expect(aq[:overall_aqi]).to be_a(Integer)
       end
     end
   end
