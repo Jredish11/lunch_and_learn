@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api do
     namespace :v1 do
+      resources :youtubes, only: [:index]
       resources :recipes, only: [:index]
-      # resources :countries, only: [:index]
     end
   end
 end

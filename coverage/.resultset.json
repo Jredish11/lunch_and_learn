@@ -5,9 +5,30 @@
         "lines": [
           1,
           1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/facades/image_facade.rb": {
+        "lines": [
           1,
-          251,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -39,83 +60,7 @@
       },
       "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/facades/youtube_facade.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          5,
-          null,
-          null,
-          null,
-          null,
-          5,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/services/country_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/services/youtube_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/poros/youtube.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          null,
-          null
+
         ]
       },
       "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/channels/application_cable/channel.rb": {
@@ -148,6 +93,20 @@
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/youtubes_controller.rb": {
+        "lines": [
           0,
           0,
           0,
@@ -223,11 +182,105 @@
         "branches": {
         }
       },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/poros/youtube.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/serializers/recipe_serializer.rb": {
         "lines": [
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/serializers/youtube_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/services/country_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/services/image_service.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -267,8 +320,31 @@
         ],
         "branches": {
         }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/services/youtube_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1691468014
+    "timestamp": 1691528506
   }
 }

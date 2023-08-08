@@ -12,8 +12,6 @@ RSpec.describe Youtube do
       expect(video.type).to eq("learning_resource")
       expect(video.title).to be_a(String)
       expect(video.youtube_video_id).to be_a(String)
-      
-      expect(video.images).to eq(nil)
     end
   end
 end

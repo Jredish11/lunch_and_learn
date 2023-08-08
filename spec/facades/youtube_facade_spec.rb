@@ -19,10 +19,7 @@ RSpec.describe YoutubeFacade do
             expect(video.youtube_video_id).to be_nil
           else
             expect(video.youtube_video_id).to be_a(String)
-          end        
-          
-          expect(video.images).to eq(nil)
-          
+          end                  
         end
       end
     end

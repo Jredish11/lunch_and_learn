@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe "Api::V1::Youtubes", type: :request do
   describe "GET " do
     it "returns http success" do
-      country = "laos"
-      get "/api/v1/youtubes", params: { country: country }
+      country = "singapore"
+      get "/api/v1/youtubes", params: { query: country }
       
       youtubes_data = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful

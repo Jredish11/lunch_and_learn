@@ -8,12 +8,12 @@ class Youtube
               :url
 
   def initialize(data)
-    @id = nil
+    @id = data[:id]
     @type = "learning_resource"
     @country = data[:country]
     @youtube_video_id = data[:video_id]
     @title = data[:title]
-    @alt_tag = data[:alt_tag]
-    @url = data[:url]
+    @alt_tag = data[:alt_description]
+    @url = data[:urls]
   end
 end
