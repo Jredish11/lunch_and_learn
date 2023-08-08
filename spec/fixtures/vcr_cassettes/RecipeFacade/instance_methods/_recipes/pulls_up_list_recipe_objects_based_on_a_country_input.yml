@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=be1acc94&app_key=022d0d5661c87cfaa078142e6a66afd4&q=thailand&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 08 Aug 2023 02:13:51 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-210.ec2.internal/10.0.1.210
+      Vary:
+      - accept-encoding
+      Strict-Transport-Security:
+      - max-age=15552001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"error","message":"Usage limits are exceeded"}'
+  recorded_at: Tue, 08 Aug 2023 02:13:51 GMT
+recorded_with: VCR 6.2.0

@@ -3,7 +3,7 @@ require "rails_helper"
 describe RecipeService do
   describe "instance methods" do
     describe "#get_recipe(country)" do
-      it "get recipe by country" do
+      xit "get recipe by country", :vcr do
 
         country = "thailand"
 

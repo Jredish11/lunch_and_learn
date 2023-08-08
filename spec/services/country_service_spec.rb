@@ -3,7 +3,7 @@ require "rails_helper"
 describe CountryService do
   describe "instance methods" do
     describe "#get_country" do
-      it "returns all the countries names" do
+      it "returns all the countries names", :vcr do
 
         countries = CountryService.get_country
 
