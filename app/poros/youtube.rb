@@ -1,4 +1,10 @@
 class Youtube
+  attr_reader :id,
+              :type,
+              :country,
+              :youtube_video_id,
+              :title,
+              :images
 
   def initialize(data)
     @id = nil
