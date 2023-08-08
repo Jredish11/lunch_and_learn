@@ -1,5 +1,6 @@
 class YoutubeSerializer
   include JSONAPI::Serializer
+  set_id :id
   attributes :country
   
   attribute :video do |yt|

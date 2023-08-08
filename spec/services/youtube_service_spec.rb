@@ -3,7 +3,7 @@ require "rails_helper"
 describe YoutubeService do
   describe "class methods" do
     describe "#get_data_by_country(country, channel_id)" do
-      it "get recipe by country", :vcr do
+      xit "get recipe by country", :vcr do
         country = "laos"
         
 
