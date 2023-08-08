@@ -4,7 +4,8 @@ class Youtube
               :country,
               :youtube_video_id,
               :title,
-              :images
+              :alt_tag,
+              :url
 
   def initialize(data)
     @id = nil
@@ -12,6 +13,7 @@ class Youtube
     @country = data[:country]
     @youtube_video_id = data[:video_id]
     @title = data[:title]
-    @images = data[:images]
+    @alt_tag = data[:alt_tag]
+    @url = data[:url]
   end
 end
