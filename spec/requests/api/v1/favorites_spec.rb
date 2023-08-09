@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe "Api::V1::Favorites", type: :request do
   describe "POST /api/v1/favorites" do
     it "creates a new favorite" do
-     create(:user, password: "secret", api_key: "klkdi33hy48thw9berd98h4539h4")
+     user = create(:user)
       params = { 
-        api_key: "klkdi33hy48thw9berd98h4539h4",
+        api_key: user.api_key, 
         country: "thailand",
         recipe_link: "https://www.tastingtable.com/recipe",
         recipe_title: "Crab Fried Rice (Khaao Pad Bpu)"
@@ -14,10 +14,10 @@ RSpec.describe "Api::V1::Favorites", type: :request do
       post "/api/v1/favorites", params: params
 
 
+      body = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
       expect(response.status).to eq(201)
       
-      body = JSON.parse(response.body, symbolize_names: true)
     end
   end
 end
