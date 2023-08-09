@@ -4,12 +4,11 @@ RSpec.describe "Api::V1::Sessions", type: :request do
   describe "POST /api/v1/sessions" do
     it "returns user data and API key if user is successful login" do
       user = User.create(name: "jim", email: "jim@example.com", password: "password", password_confirmation: "password")
-
       login = {
         email: user.email,
         password: "password"
       }
-
+      
       post "/api/v1/sessions", params: login
 
       expect(response).to be_successful

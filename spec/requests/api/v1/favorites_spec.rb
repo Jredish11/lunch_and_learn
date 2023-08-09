@@ -13,7 +13,7 @@ RSpec.describe "Api::V1::Favorites", type: :request do
 
       post "/api/v1/favorites", params: params
 
-
+      require 'pry'; binding.pry
       body = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
       expect(response.status).to eq(201)

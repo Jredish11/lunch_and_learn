@@ -14,7 +14,7 @@
           1,
           null,
           1,
-          6,
+          3,
           null,
           null
         ]
@@ -26,17 +26,25 @@
           null
         ]
       },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/sessions_controller.rb": {
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/favorites_controller.rb": {
         "lines": [
           1,
           1,
-          2,
+          3,
+          null,
+          3,
+          1,
           null,
           2,
+          2,
+          null,
+          null,
+          null,
+          null,
           1,
           null,
           1,
-          null,
+          2,
           null,
           null
         ]
@@ -47,32 +55,10 @@
           null
         ]
       },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/models/favorite.rb": {
         "lines": [
           1,
           1,
-          1,
-          null
-        ]
-      },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          4,
-          4,
-          2,
-          2,
-          null,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
           null
         ]
       },
@@ -96,35 +82,6 @@
         "branches": {
         }
       },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/favorites_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/recipes_controller.rb": {
         "lines": [
           0,
@@ -139,6 +96,46 @@
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/sessions_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
           0,
           0,
           0,
@@ -303,15 +300,6 @@
         "branches": {
         }
       },
-      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/models/favorite.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/poros/recipe.rb": {
         "lines": [
           0,
@@ -377,6 +365,16 @@
           0,
           null,
           0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jeffreyredish/turing/3mod/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
+        "lines": [
           0,
           0,
           0,
@@ -506,6 +504,6 @@
         }
       }
     },
-    "timestamp": 1691561911
+    "timestamp": 1691586336
   }
 }
