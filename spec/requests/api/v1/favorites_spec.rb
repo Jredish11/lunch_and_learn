@@ -13,7 +13,7 @@ RSpec.describe "Api::V1::Favorites", type: :request do
 
       post "/api/v1/favorites", params: params
 
-      require 'pry'; binding.pry
+
       body = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
       expect(response.status).to eq(201)
@@ -44,20 +44,6 @@ RSpec.describe "Api::V1::Favorites", type: :request do
       expect(body).to be_a(Hash)
       expect(body).to have_key(:error)
       expect(body[:error]).to eq("Invalid api_key")
-    end
-    
-    it "returns error if api_key is invalid" do
-      user = create(:user)
-      params = { 
-        api_key: user.api_key, 
-        country: "asjdlfjk",
-        recipe_link: "https://www.",
-        recipe_title: "dfadsdf"
-      }
-  
-      post "/api/v1/favorites", params: params
-
-      body = JSON.parse(response.body, symbolize_names: true)
     end
   end
 end
