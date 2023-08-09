@@ -7,13 +7,12 @@ class Youtube
               :alt_tag,
               :url
 
-  def initialize(data)
-    @id = data[:id]
+  def initialize(data, country)
+    @id = nil
     @type = "learning_resource"
-    @country = data[:country]
+    @country = country
     @youtube_video_id = data[:video_id]
-    @title = data[:title]
-    @alt_tag = data[:alt_description]
-    @url = data[:urls]
+    @title = data[:snippet][:title]
+  
   end
 end

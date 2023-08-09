@@ -24,6 +24,7 @@ RSpec.describe "Api::V1::Youtubes", type: :request do
         expect(yt[:attributes]).to be_a(Hash)
 
         expect(yt[:attributes]).to have_key(:country)
+        require 'pry'; binding.pry
         expect(yt[:attributes][:country]).to be_a(String)
         
         expect(yt[:attributes]).to have_key(:video)
@@ -35,13 +36,14 @@ RSpec.describe "Api::V1::Youtubes", type: :request do
         expect(yt[:attributes][:video]).to have_key(:youtube_video_id)
         expect(yt[:attributes][:video][:youtube_video_id]).to be_nil.or be_a(String)
         
-                        
+        
         expect(yt[:attributes]).to have_key(:images)
         expect(yt[:attributes][:images]).to be_a(Hash)
+        require 'pry'; binding.pry
         
         # expect(yt[:attributes][:video][:images]).to have_key(:alt_tag)
         # expect(yt[:attributes][:video][:images][:alt_tag]).to eq(nil)
-
+        
         # expect(yt[:attributes][:video][:images]).to have_key(:url)
         # expect(yt[:attributes][:video][:images][:url]).to be_a(String)
       end

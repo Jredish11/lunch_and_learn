@@ -7,7 +7,7 @@ class ImageService
     response = img_conn.get("?") do |request|
       request.params['query'] = country
       request.params['client_id'] = ENV['us_key']
-      request.params['per_page'] = ""
+      request.params['per_page'] = "10"
     end
     json = JSON.parse(response.body, symbolize_names: true)
   end
