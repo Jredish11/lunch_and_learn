@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe RecipeFacade do
   describe "instance methods" do
     describe "#recipes" do
-      xit "pulls up list recipe objects based on a country input", :vcr do
+      it "pulls up list recipe objects based on a country input", :vcr do
         country = "thailand"
         
         recipes = RecipeFacade.new(country).recipes
