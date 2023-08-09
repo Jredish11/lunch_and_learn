@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=be1acc94&app_key=022d0d5661c87cfaa078142e6a66afd4&q=thailand&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=553e926c&app_key=223bdd6ddfff02be0512efe5c68cca76&q=thailand&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -15,13 +15,13 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 429
+      code: 401
       message: ''
     headers:
       Server:
       - openresty
       Date:
-      - Tue, 08 Aug 2023 02:13:53 GMT
+      - Wed, 09 Aug 2023 15:16:43 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -40,6 +40,7 @@ http_interactions:
       - max-age=15552001
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"error","message":"Usage limits are exceeded"}'
-  recorded_at: Tue, 08 Aug 2023 02:13:53 GMT
+      string: '{"status":"error","message":"Unauthorized app_id = 553e926c. This app_id
+        is for another API."}'
+  recorded_at: Wed, 09 Aug 2023 15:16:43 GMT
 recorded_with: VCR 6.2.0
