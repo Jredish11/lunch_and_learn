@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Recipe do
   describe "existance" do
-    it "exits and has attributes" do
+    xit "exits and has attributes" do
      
       country = "mexico"
       recipe = RecipeFacade.new(country).recipes

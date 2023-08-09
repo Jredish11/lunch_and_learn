@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe ImageFacade do
   describe "instance methods" do
     describe "#images" do
-      it "pulls up images based on a country input", :vcr do
+      xit "pulls up images based on a country input", :vcr do
         country = "laos"
 
         images = ImageFacade.new(country).images

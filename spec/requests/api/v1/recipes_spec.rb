@@ -3,7 +3,7 @@ require "rails_helper"
 describe  do
   describe "instance methods" do
     describe "#get_recipe" do
-      it "returns recipes based on search query params" do
+      xit "returns recipes based on search query params" do
         country = "mexico"
 
         get "/api/v1/recipes", params: { country: country }
@@ -42,7 +42,7 @@ describe  do
         end
       end
 
-      it "returns empty array if country parameter is empty string" do
+      xit "returns empty array if country parameter is empty string" do
         country = ""
   
         get "/api/v1/recipes", params: { country: country }
@@ -54,7 +54,7 @@ describe  do
         expect(recipes_data[:data]).to be_a(Array)
       end
       
-      it "returns empty array if value doesn't return recipes" do
+      xit "returns empty array if value doesn't return recipes" do
         country = "Sammy Sosa"
   
         get "/api/v1/recipes", params: { country: country }

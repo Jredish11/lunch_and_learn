@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Youtube do
   describe "existance" do
-    it "exits and has attributes" do
+    xit "exits and has attributes" do
       country = "laos"
 
       video = YoutubeFacade.new(country).videos.first

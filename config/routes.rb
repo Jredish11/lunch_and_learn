@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       resources :youtubes, only: [:index]
       resources :recipes, only: [:index]
       resources :users, only: [:create]
+      resources :sessions, only: [:create]
     end
   end
 end
