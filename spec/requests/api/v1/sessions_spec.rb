@@ -11,7 +11,6 @@ RSpec.describe "Api::V1::Sessions", type: :request do
       }
 
       post "/api/v1/sessions", params: login
-      require 'pry'; binding.pry
 
       expect(response).to be_successful
       expect(response.status).to eq(201)

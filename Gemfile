@@ -45,6 +45,7 @@ group :development, :test do
   gem 'pry'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :test do
@@ -61,6 +62,7 @@ gem 'faraday'
 gem 'figaro'
 gem "jsonapi-serializer"
 gem 'bcrypt', '~> 3.1.7'
+
 
 
 # group :development, :test do
